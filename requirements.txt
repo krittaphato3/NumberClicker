@@ -1,0 +1,14 @@
+# Number-sequence clicking bot dependencies (Python 3.9+; Windows-first).
+#
+# Core (required for the bot to actually see and click):
+opencv-python>=4.8.0
+numpy>=1.24.0
+mss>=9.0.0                # fast screen capture (persistent-instance hot loop)
+Pillow>=10.0.0            # font-template digit rendering + ImageGrab fallback
+pyautogui>=0.9.54         # click fallback when not on Windows
+keyboard>=0.13.5          # global hotkeys F1/F2/F3 (needs admin on some Linux setups)
+
+# Optional:
+pytest>=7.0.0             # run the unit tests
+# pytesseract + tesseract.exe  # optional: tesseract OCR instead of the built-in
+                               # font-template engine (no install needed on Windows)
